@@ -8,17 +8,17 @@ Subtopics:
 """
 
 # Langchain basics
-from langchain.llms import OpenAI
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
+from langchain_openai import OpenAI
+from langchain_classic.chains import LLMChain
+from langchain_classic.prompts import PromptTemplate
 import os
 
 # RAG (Retrieval Augmented Generation)
-from langchain.chains import RetrievalQA
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_classic.chains import RetrievalQA
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
 import numpy as np
-from langchain.memory import ConversationBufferMemory
+from langchain_classic.memory import ConversationBufferMemory
 
 from dotenv import load_dotenv
 

@@ -1,9 +1,11 @@
 streamlit
 langchain
+langchain-openai
+langchain-classic
+langchain_community
 fastapi
 uvicorn
 openai
-langchain_community
 python-dotenv
 tiktoken
 faiss-cpu
