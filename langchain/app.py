@@ -11,7 +11,7 @@ st.markdown("""
 """)
 
 st.header("Ask the AI Agent (via FastAPI backend)")
-backend_url = st.text_input("FastAPI backend URL", value="http://localhost:8005/ask")
+backend_url = st.text_input("FastAPI backend URL", value="http://localhost:8000/ask")
 openai_api_key = st.text_input("OpenAI API Key (optional, overrides .env)", type="password")
 question = st.text_input("Enter your question:")
 

@@ -1,13 +1,10 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from langchain.llms import OpenAI
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain.memory import ConversationBufferMemory
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chains import RetrievalQA
+from langchain_openai import OpenAI, OpenAIEmbeddings
+from langchain_classic.chains import LLMChain, RetrievalQA
+from langchain_classic.prompts import PromptTemplate
+from langchain_community.vectorstores import FAISS
 import os
 from dotenv import load_dotenv
 
